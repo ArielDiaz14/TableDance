@@ -1,0 +1,2 @@
+class Zorra < ApplicationRecord
+end

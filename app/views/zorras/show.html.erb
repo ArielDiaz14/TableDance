@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nombre:</strong>
+  <%= @zorra.nombre %>
+</p>
+
+<p>
+  <strong>Tabledance:</strong>
+  <%= @zorra.tabledance %>
+</p>
+
+<p>
+  <strong>Edad:</strong>
+  <%= @zorra.edad %>
+</p>
+
+<p>
+  <strong>Precio:</strong>
+  <%= @zorra.precio %>
+</p>
+
+<p>
+  <strong>Horas:</strong>
+  <%= @zorra.horas %>
+</p>
+
+<%= link_to 'Edit', edit_zorra_path(@zorra) %> |
+<%= link_to 'Back', zorras_path %>

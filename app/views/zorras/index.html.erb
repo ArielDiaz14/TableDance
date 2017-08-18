@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Zorras</h1>
+<div>
+<table>
+  <thead>
+    <tr>
+      <th>Id</th>
+      <th>Nombre</th>
+      <th>Tabledance</th>
+      <th>Edad</th>
+      <th>Precio</th>
+      <th>Horas</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @zorras.each do |zorra| %>
+      <tr>
+        <td><%= zorra.id %></td>
+        <td><%= zorra.nombre %></td>
+        <td><%= zorra.tabledance %></td>
+        <td><%= zorra.edad %></td>
+        <td><%= zorra.precio %></td>
+        <td><%= zorra.horas %></td>
+        <td><button> <%= link_to 'Mostrar', zorra %></td></button>
+        <td><button> <%= link_to 'Editar', edit_zorra_path(zorra) %></button></td>
+        <td><button><%= link_to 'Eliminar', zorra, method: :delete, data: { confirm: 'Estás seguro animal?' } %><button></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+<%= link_to 'New Zorra', new_zorra_path %>
+<%= link_to 'Reports', zorras_reportes_path %>
+
+<br>
+</div>
+

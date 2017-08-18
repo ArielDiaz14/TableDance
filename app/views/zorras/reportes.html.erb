@@ -1,0 +1,115 @@
+<div class="tablasRep">
+<h2>Edades</h2>
+
+<table>
+  <thead>
+
+    <tr>
+      <th>Id</th>
+      <th>Nombre</th>
+      <th>TableDance</th>
+      <th>Edad</th>
+      <th>Precio</th>
+      <th>Horas</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @objetosGuardadosEdad.each do |zorra| %>
+      <tr>
+        <td><%= zorra.id %></td>
+        <td><%= zorra.nombre %></td>
+        <td><%= zorra.tabledance %></td>
+        <td><%= zorra.edad %></td>
+        <td><%= zorra.precio %></td>
+        <td><%= zorra.horas %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<% zorraM = @objetosGuardadosEdad.first %>
+<% zorraMa = @objetosGuardadosEdad.last %>
+<h3> La morra mas joven es: <%= zorraM.nombre %></h3> 
+<h3> La morra mas vieja es: <%= zorraMa.nombre %></h3> 
+
+<h2>Precio</h2>
+
+<table>
+  <thead>
+
+    <tr>
+      <th>Id</th>
+      <th>Nombre</th>
+      <th>TableDance</th>
+      <th>Edad</th>
+      <th>Precio</th>
+      <th>Horas</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @objetosGuardadosPrecio.each do |zorra| %>
+      <tr>
+        <td><%= zorra.id %></td>
+        <td><%= zorra.nombre %></td>
+        <td><%= zorra.tabledance %></td>
+        <td><%= zorra.edad %></td>
+        <td><%= zorra.precio %></td>
+        <td><%= zorra.horas %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<% zorraM = @objetosGuardadosPrecio.first %>
+<% zorraMa = @objetosGuardadosPrecio.last %>
+<h3> la más barata es: <%= zorraM.nombre %> </h3> 
+<h3> la más cara es: <%= zorraMa.nombre %> </h3> 
+
+<h2>Horas</h2>
+
+<table>
+  <thead>
+
+    <tr>
+      <th>Id</th>
+      <th>Nombre</th>
+      <th>TableDance</th>
+      <th>Edad</th>
+      <th>Precio</th>
+      <th>Horas</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @objetosGuardadosHoras.each do |zorra| %>
+      <tr>
+        <td><%= zorra.id %></td>
+        <td><%= zorra.nombre %></td>
+        <td><%= zorra.tabledance %></td>
+        <td><%= zorra.edad %></td>
+        <td><%= zorra.precio %></td>
+        <td><%= zorra.horas %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<% zorraM = @objetosGuardadosHoras.first %>
+<% zorraMa = @objetosGuardadosHoras.last %>
+<h3> la que menos trabaja es: <%= zorraM.nombre %> </h3> 
+<h3> la que mas trabaja es: <%= zorraMa.nombre %> </h3> 
+
+
+
+
+<div style="text-align:center;">
+<%= link_to 'Atrás', zorras_path %>
+</div>
+
+
+</div>

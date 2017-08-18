@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  nombre: MyString
+  tabledance: MyString
+  edad: 1
+  precio: 1.5
+  horas: 1.5
+
+two:
+  nombre: MyString
+  tabledance: MyString
+  edad: 1
+  precio: 1.5
+  horas: 1.5
